@@ -1,0 +1,42 @@
+a {
+  color: green;
+  font-size: 20px;
+}
+
+form {
+    color: darkblue;
+}
+
+[type] {
+    border: 2px solid greenyellow;
+}
+
+[src] {
+    border: 2px solid green;
+}
+
+body {
+    background-color: #52c6a7;
+}
+
+.advertisement {
+    background-color: yellow;
+    border: 2px dashed red;
+    width: 520px;
+    height: 20px;
+}
+html {
+    font-family: "Times New Roman"
+}
+.colored {
+    color: blue;
+    width: 1450px;
+    height: 100px;
+    background-color: rgb(100,100,200,0.5);
+}
+
+.paragraph {
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}

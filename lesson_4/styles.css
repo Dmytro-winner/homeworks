@@ -1,0 +1,44 @@
+div p {
+    color: green;
+}
+
+section p{
+    color: orange;
+}
+
+.advertisement {
+    background-color: yellow;
+    border: 2px dashed red;
+    width: 520px;
+    height: 20px;
+}
+
+div > p{
+    color: mediumaquamarine;
+}
+
+
+
+.container a ~ p {
+    color: blueviolet;
+}
+
+a[href*=next] {
+    color: darkgoldenrod;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#spec {
+    background-color: fuchsia;
+}
+
+p {
+    color: greenyellow;
+    font-size: 50px;
+}
+
+
+

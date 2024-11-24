@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="index.html">Навчання в автошколах України</a>
+  <a href="about.html">Діяльність автошкіл</a>
+  <a href="next.html">Важливість автошкіл</a>
+  <a href="example.html">Приклади роботи автошколи</a>
+  <a href="contacts.html">Контакти</a>
+
+  <p>Контакти</p>
+
+  <p>Будь ласка заповніть свої дані, та поставте свої відмітки в відповідних полях.</p>
+    <p>Оберіть цифру, яка відповідає Вашому віку:</p>
+
+  <div>
+    <fieldset>
+      <legend>Обов'язково до заповнення</legend>
+      <input type="number" name="quantity" min="16" max="99">
+    </fieldset>
+  </div>
+
+  <p>Введіть дату, коли хочете почати заняття:</p>
+
+  <div>
+    <input type="date" name="day">
+  </div>
+
+  <p>Будь ласка, оберіть коробку передач, на якій хочете навчатися:</p>
+  <label for="transmission">Виберіть коробку передач:</label>
+  <select id="transmission" name="transmission">
+    <option value="manual">Ручна</option>
+    <option value="automatic">Автоматична</option>
+  </select>
+
+  <form>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email">
+
+    <input type="submit" value="Надіслати">
+  </form>
+
+
+
+   <input type="radio" name="gender" value="male"> Чоловік
+   <input type="radio" name="gender" value="female"> Жінка
+   <input type="radio" name="gender" value="male"> Середнє
+
+
+  <!--
+  <p>У Німеччині на всіх бланках для заповнення саме три відмітки. Я не помилився
+
+  </p>
+  -->
+  <p>Якщо Ви хочете швидко знайти потрібну автошколу, зробить це тут:</p>
+
+  <form action="https://google.com/search" method="get">
+    <label for="name">Search:</label>
+    <input type="text" id="search" name="q">
+  </form>
+
+  <div class="advertisement">
+    Правильно обрана Автошкола - Запорука Ваших справжніх водійських прав
+  </div>
+
+
+</body>
+</html>
