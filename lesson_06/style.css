@@ -1,0 +1,49 @@
+table {
+    width: 20%;
+    margin-top:2;
+}
+
+.btable {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: black;
+}
+
+.btable td {
+    border: 8px solid black;
+    padding: 45px;
+    text-align: center;
+}
+
+.cell1 {
+    background-color: white;
+}
+
+.cell2 {
+    background-color: gold;
+}
+
+.cell3 {
+    background-color: red;
+}
+
+.cell4 {
+    background-color: black;
+}
+
+.cell5 {
+    background-color: darkblue;
+}
+
+.btable.insidet {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+td.table-container {
+    padding: 0;
+}
+
+
+
