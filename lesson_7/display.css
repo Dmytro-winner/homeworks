@@ -1,0 +1,35 @@
+.square {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: mediumturquoise;
+    border: 1px solid black;
+    display: inline;
+}
+
+.square1 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: mediumturquoise;
+    border: 1px solid black;
+    display: block;
+}
+
+.first {
+    display: none;
+}
+
+.third {
+    visibility: hidden;
+}
+
+.special {
+    background-color: greenyellow;
+    border: 1px solid green;
+    padding: 50px;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    overflow: auto;
+}

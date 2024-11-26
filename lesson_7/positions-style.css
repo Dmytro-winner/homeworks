@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    background-color: blue;
+    padding: 50px;
+}
+.posits {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: mediumturquoise;
+    position: static;
+}
+
+.pos {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: mediumturquoise;
+    display: inline-block;
+}
+
+.pos1 {
+    background-color: greenyellow;
+    position: relative;
+    top: 10px;
+    left: 9px
+}
+
+.ps1 {
+    background-color: yellow;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 10px
+    bottom: 20px;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+}
+
+.post {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: mediumturquoise;
+    display: inline-block;
+}
+
+.contact {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10px;
+    top: 20px;
+    position: sticky;
+}
