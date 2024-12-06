@@ -1,104 +1,94 @@
-
-.container {
-    border: 1px solid black;
-    padding: 15px;
-    background-color: dodgerblue;
+body {
+    margin: 0;
 }
 
-.container-header {
-    border: 1px solid black;
+.header {
+    grid-area: header-area;
     background-color: lightskyblue;
-    padding: 100px;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.container-content {
-    border: 1px solid black;
+.content {
+    grid-area: content-area;
     background-color: lightgrey;
-    padding: 100px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
 }
-
-.container-sign-up {
-    border: 1px solid black;
+.signup {
+    grid-area: signup-area;
     background-color: lightblue;
-    padding: 100px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
 }
 
-.container-feature-left {
-    border: 1px solid black;
+.feature-bisque {
+    grid-area: feature-bisque-area;
     background-color: bisque;
-    padding: 100px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
 }
 
-.container-feature-middle {
-    border: 1px solid black;
+.feature-lightcoral {
+    grid-area: feature-lightcoral-area;
     background-color: lightcoral;
-    padding: 100px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
 }
 
-.container-feature-right {
-    border: 1px solid black;
+.feature-violet {
+    grid-area: feature-violet-area;
     background-color: violet;
-    padding: 100px;
     text-align: center;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.product {
-    border: 1px solid black;
-    background-color: lightskyblue;
-    padding: 10px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    grid-template-rows: repeat(auto-fit, 1fr);
-    justify-content: center;
-}
-
-.list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
-    grid-template-rows: repeat(auto-fit, 1fr);
-    justify-content: center;
-}
-
-/*  Це означає, що правила в середині працюють коли екран менше або рівно 1000px */
-@media (min-width: 900px) {
 
 }
 
-@media (min-width: 800px) {
-    .container-centered-sign {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+@media (max-width: 2200px) {
+    .grid {
+        display: grid;
+        background-color: dodgerblue;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 200px 300px 80px 300px;
+        grid-template-areas:
+    ". . ."
+    "header-area header-area header-area"
+    "feature-bisque-area feature-violet-area feature-lightcoral-area"
+    "signup-area signup-area signup-area"
+    "content-area content-area content-area";
     }
-    .container-centered-feature {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
+    .grid {
+        display: grid;
+        background-color: dodgerblue;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20px 200px 300px 80px 80px;
+        grid-template-areas:
+    ". ."
+    "header-area header-area"
+    "content-area content-area"
+    "signup-area feature-bisque-area"
+    "feature-lightcoral-area feature-violet-area";
+    }
+}
 
-
+@media (max-width: 300px) {
+    .grid {
+        display: grid;
+        background-color: dodgerblue;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 200px 300px 100px 100px 100px 100px;
+        grid-template-areas:
+    "."
+    "header-area"
+    "content-area"
+    "signup-area"
+    "feature-bisque-area"
+    "feature-lightcoral-area"
+    "feature-violet-area";
+    }
 }
