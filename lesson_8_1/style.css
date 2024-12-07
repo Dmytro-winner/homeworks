@@ -43,11 +43,23 @@ body {
 
 }
 
-@media (max-width: 2200px) {
+.grid {
+    display: grid;
+    background-color: dodgerblue;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 200px 300px 80px 300px;
+    grid-template-areas:
+    ". . ."
+    "header-area header-area header-area"
+    "feature-bisque-area feature-violet-area feature-lightcoral-area"
+    "signup-area signup-area signup-area"
+    "content-area content-area content-area";
+}
+
+@media (max-width: 1000px) {
     .grid {
         display: grid;
         background-color: dodgerblue;
-        height: 100vh;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 20px 200px 300px 80px 300px;
         grid-template-areas:
@@ -63,9 +75,8 @@ body {
     .grid {
         display: grid;
         background-color: dodgerblue;
-        height: 100vh;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20px 200px 300px 80px 80px;
+        grid-template-rows: 20px 200px 300px 90px 90px;
         grid-template-areas:
     ". ."
     "header-area header-area"
@@ -79,7 +90,6 @@ body {
     .grid {
         display: grid;
         background-color: dodgerblue;
-        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: 20px 200px 300px 100px 100px 100px 100px;
         grid-template-areas:
