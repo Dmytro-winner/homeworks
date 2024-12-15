@@ -204,6 +204,20 @@ body{
   font-weight:500;
   margin:0;
 }
+.description__about{
+  max-width:540px;
+  margin:0;
+  padding-bottom:65px;
+}
+.description__button{
+  color:var(--text-light-color);
+  background-color:var(--main-color);
+  border:0;
+  letter-spacing:var(--text-letter-spacing);
+  text-transform:uppercase;
+  padding-inline:41px;
+  padding-block:25px 20px;
+}
 
 .navbar__list{
   margin-block:0;
@@ -218,7 +232,6 @@ body{
 .navbar__item{
   list-style-type:none;
 }
-
 .navbar__item a{
   color:#000000;
   text-decoration:none;
@@ -231,27 +244,10 @@ body{
   color:#34547A;
 }
 
-.description__about{
-  max-width:540px;
-  margin:0;
-  padding-bottom:65px;
-}
-
-.description__button{
-  color:var(--text-light-color);
-  background-color:var(--main-color);
-  border:0;
-  letter-spacing:var(--text-letter-spacing);
-  text-transform:uppercase;
-  padding-inline:41px;
-  padding-block:25px 20px;
-}
-
 .light-block{
   width:540px;
   margin-inline:auto;
 }
-
 .light-block__header{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -264,7 +260,6 @@ body{
   font-weight:500;
   font-size:32px;
 }
-
 .light-block__text{
   margin:0;
   text-align:center;

@@ -20,8 +20,19 @@ body {
 .container {
   width: 1150px;
   padding-inline: 20px;
-  margin-inline: auto;
   padding-block: 100px;
+}
+
+.my-margin-inline(@pixels ) {
+  margin-inline: @pixels;
+}
+
+.container {
+  .my-margin-inline(auto);
+}
+
+.light-block {
+  .my-margin-inline(auto);
 }
 
 .header {
@@ -40,12 +51,30 @@ body {
   letter-spacing: 0.05em;
 }
 
-.description h1 {
-  padding-top: 80px;
-  padding-bottom: 60px;
-  font-size: 48px;
-  font-weight: 500;
-  margin: 0;
+.description {
+  h1 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__about {
+    max-width: 540px;
+    margin: 0;
+    padding-bottom: 65px;
+  }
+
+  &__button {
+    color: var(--text-light-color);
+    background-color: var(--main-color);
+    border: 0;
+    letter-spacing: var(--text-letter-spacing);
+    text-transform: uppercase;
+    padding-inline: 41px;
+    padding-block: 25px 20px;
+  }
 }
 
 .navbar__list {
@@ -58,54 +87,37 @@ body {
 
 .navbar__item {
   list-style-type: none;
-}
 
-.navbar__item a {
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: var(--text-letter-spacing);
+  a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: var(--text-letter-spacing);
+  }
 }
 
 .menu__item a:hover {
   color: #34547A;
 }
 
-.description__about {
-  max-width: 540px;
-  margin: 0;
-  padding-bottom: 65px;
-}
-
-.description__button {
-  color: var(--text-light-color);
-  background-color: var(--main-color);
-  border: 0;
-  letter-spacing: var(--text-letter-spacing);
-  text-transform: uppercase;
-  padding-inline: 41px;
-  padding-block: 25px 20px;
-}
-
 .light-block {
   width: 540px;
-  margin-inline: auto;
-}
 
-.light-block__header {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding-block: 12px;
-  font-weight: 500;
-  font-size: 32px;
-}
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-block: 12px;
+    font-weight: 500;
+    font-size: 32px;
+  }
 
-.light-block__text {
-  margin: 0;
-  text-align: center;
-  padding-top: 38px;
+  &__text {
+    margin: 0;
+    text-align: center;
+    padding-top: 38px;
+  }
 }
 
 .dark-container {
