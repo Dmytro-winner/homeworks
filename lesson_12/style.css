@@ -1,0 +1,133 @@
+.container {
+    display: grid;
+    background-color: white;
+    width: 800px;
+    height: 800px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 20px 30px;
+}
+
+.item {
+    border: 6px solid black;
+}
+
+.special {
+    background-color: white;
+    grid-column: 1/span 2;
+}
+
+.special1 {
+    background-color: white;
+    grid-column: 3/span 3;
+}
+
+.special2 {
+    background-color: orange;
+    grid-column: 6/span 2;
+}
+
+.special3 {
+    background-color: white;
+    grid-column: 8/span 1;
+    grid-row: 1/span 6;
+}
+
+.special4 {
+    background-color: white;
+    grid-column: 1/span 1;
+    grid-row: 2/span 2;
+}
+
+.special5 {
+    background-color: white;
+    grid-column: 1/span 1;
+    grid-row: 4/span 3;
+}
+
+.special6 {
+    background-color: orange;
+    grid-column: 1/span 1;
+    grid-row: 7/span 3;
+}
+
+.special7 {
+    background-color: red;
+    grid-column: 2/span 4;
+    grid-row: 2/span 4;
+}
+
+.special8 {
+    background-color: orange;
+    grid-column: 6/span 2;
+    grid-row: 2/span 2;
+}
+
+.special9 {
+    background-color: white;
+    grid-column: 6/span 1;
+    grid-row: 4/span 2;
+}
+
+.special10 {
+    background-color: white;
+    grid-column: 7/span 1;
+    grid-row: 4/span 2;
+}
+
+.special11 {
+    background-color: white;
+    grid-column: 6/span 2;
+    grid-row: 6/span 1;
+}
+
+.special12 {
+    background-color: darkblue;
+    grid-column: 6/span 2;
+    grid-row: 7/span 2;
+}
+
+.special13 {
+    background-color: red;
+    grid-column: 8/span 1;
+    grid-row: 7/span 3;
+}
+
+.special14 {
+    background-color: white;
+    grid-column: 4/span 2;
+    grid-row: 6/span 1;
+}
+
+.special15 {
+    background-color: white;
+    grid-column: 4/span 2;
+    grid-row: 7/span 1;
+}
+
+.special16 {
+    background-color: black;
+    grid-column: 4/span 2;
+    grid-row: 8/span 1;
+}
+
+.special17 {
+    background-color: black;
+    grid-column: 2/span 2;
+    grid-row: 6/span 2;
+}
+
+.special18 {
+    background-color: white;
+    grid-column: 2/span 2;
+    grid-row: 8/span 2;
+}
+
+.special19 {
+    background-color: white;
+    grid-column: 4/span 4;
+    grid-row: 9/span 1;
+}
+
+
+
+
