@@ -1,0 +1,100 @@
+.rect {
+    fill: blue;
+    stroke-linecap: square;
+    stroke-width: 5;
+    stroke: darkseagreen;
+}
+
+.rect:hover {
+    fill: yellow;
+}
+
+.rectangle {
+    fill: coral;
+    stroke-linecap: square;
+    stroke-width: 5;
+    stroke: green;
+}
+
+.rectangle:hover {
+    fill: slateblue;
+}
+
+.circ {
+    fill: dodgerblue;
+    stroke-linecap: round;
+    stroke-width: 5;
+    stroke: green;
+}
+
+.circ:hover {
+    fill: darkseagreen;
+}
+
+.ellipse {
+    fill: green;
+    stroke-linecap: round;
+    stroke-width: 5;
+    stroke: blue;
+}
+
+.ellipse:hover {
+    fill: lightsalmon;
+}
+
+.container {
+    background-color: gold;
+    margin-top: 100px;
+}
+
+.new {
+    height: 150px;
+}
+
+.rectangle1 {
+    fill: blue;
+    stroke-linecap: square;
+    stroke-width: 5;
+    stroke: green;
+    text-align: center;
+    margin: auto;
+}
+
+.rectangle1:hover {
+    fill: orange;
+}
+
+.container .new {
+    animation-name: blue;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blue {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+.container:hover .new {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
