@@ -1,3 +1,6 @@
+:root {
+    --bs-info-rgb: 50, 485, 120;
+}
 .acor-container {
     margin: 20px 0;
 }
