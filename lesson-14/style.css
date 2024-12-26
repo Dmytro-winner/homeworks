@@ -1,5 +1,5 @@
 :root {
-    --bs-info-rgb: 50, 485, 120;
+    --bs-info-rgb: 50, 505, 200;
 }
 .acor-container {
     margin: 20px 0;
@@ -61,5 +61,11 @@
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
+}
+
+.video {
+    display: grid;
+    grid-area: video;
+    justify-items: center;
 }
 
