@@ -1,51 +1,58 @@
 "use strict";
 
-let a = 27;
-let b = 9;
-let c = 5;
-let d = 3;
-
-let result = a / b + c * d;
-console.log(result);
-
-
-
-let person1 = 'Anna';
-let person2 = 'Anfisa';
-let person3 = 'Gala';
-let person4 = 'Zhanna';
-let person5 = 'Diana';
-
-let persons = ['Anna', 'Anfisa', 'Gala', 'Zhanna', 'Diana']
-console.log(persons);
-
-let cooperatorName = 'Mike';
-let cooperatorEmail = 'mike@gmail.com';
-let cooperatorPassword = '1234567890';
-let cooperatorPhoneNumber = '+380112223344';
-
-let cooperator = {
-    name: 'Mike',
-    email: 'mike@gmail.com',
-    password: '1234567890',
-    phoneNumber: '+380112223344',
+const closet = {
+    isMirrorPresent: true,
+    doorsCount: 5,
+    manufacturer: 'IKEA',
+    color: 'beige',
+    clothes: ['shirt', 'pants', 'hat']
 }
+console.log(closet);
 
-console.log(cooperatorPhoneNumber);
+const table = {
+    width: 120,
+    height: 80,
+    isBoxHave: false,
+    color: 'black',
+}
+console.log(table);
 
-let furniture1 = 'table';
-let furniture2 = 'chair';
-let furniture3 = 'armchair';
-let furniture4 = 'sofa';
-let furniture5 = 'closet';
+const window = {
+    width: 200,
+    height: 150,
+    color: 'white',
+    isWindowOpen: true,
+}
+console.log(window);
 
-let furnitures = ['table', 'chair', 'armchair', 'sofa', 'closet'];
-console.log(furnitures);
+const bed = {
+    width: 300,
+    height: 80,
+    color: 'beige',
+    isBoxHave: true,
+    box: 2,
+}
+console.log(bed);
 
-let jewerly1 = 'Gold';
-let jewerly2 = 'Silver';
-let jewerly3 = 'Diamond';
-let jewerly4 = 'Platinum';
+const nightstand = {
+    width: 50,
+    height: 60,
+    color: 'beige',
+    isBoxHave: true,
+    quantity: 2,
+}
+console.log(nightstand);
 
-let jewerlys = ['Gold', 'Silver', 'Diamond', 'Platinum'];
-console.log(jewerlys);
+const tv = {
+    diagonal: 65,
+    manufacturer: 'SONY',
+    isSmartHave: true,
+    color: 'black',
+}
+console.log(tv);
+
+const room = ['luster', 'door', 'printer', 'notebook']
+    console.log(room);
+
+
+
