@@ -51,7 +51,7 @@ const tv = {
 }
 console.log(tv);
 
-const room = ['luster', 'door', 'printer', 'notebook']
+const otherThingsInRoom = ['luster', 'door', 'printer', 'notebook']
     console.log(room);
 
 

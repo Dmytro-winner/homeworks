@@ -66,7 +66,7 @@
 
 .container .new {
     animation-name: blue;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
