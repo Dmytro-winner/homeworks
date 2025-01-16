@@ -88,7 +88,7 @@
  let myRound = 89.279;
  console.log(myRound);
 // випадкове число між 0..10 → myRandom
-  console.log('random', Math.floor(Math.random()*10));
+  console.log('random', Math.floor(Math.random()*11));
 // 3 у 5 степені → myPow
   let powerNumber = Math.pow(3, 5);
   console.log(powerNumber);
@@ -124,8 +124,8 @@
 
   let isRamaPos = strObj.str.includes('рама');
   console.log(isRamaPos);
-  let RamaPos = strObj.str.indexOf('рама');
-  console.log(RamaPos);
+  let ramaPos = strObj.str.indexOf('рама');
+  console.log(ramaPos);
 
 
 
