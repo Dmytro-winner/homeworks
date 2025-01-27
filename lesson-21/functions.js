@@ -24,13 +24,13 @@ export function average(mixed) {
 // ============================================
 
 //export function average(mixed) {
-//    // Перетворюємо елементи масиву на числа, якщо це можливо (якщо елемент можна перетворити в число)
-//    const numericValues = mixed
-//        .map(item => Number(item)) // перетворюємо кожен елемент на число
-//        .filter(item => !isNaN(item)); // фільтруємо нечислові значення (NaN)
-//
-//    if (numericValues.length === 0) return 0; // якщо немає числових значень, повертаємо 0
 
-//  const sum = numericValues.reduce((acc, curr) => acc + curr, 0);
-//    return sum / numericValues.length;
+//   const numericValues = mixed
+//       .map(item => Number(item))
+//        .filter(item => !isNaN(item));
+
+//   if (numericValues.length === 0) return 0;
+
+// const sum = numericValues.reduce((acc, curr) => acc + curr, 0);
+//   return sum / numericValues.length;
 //}
