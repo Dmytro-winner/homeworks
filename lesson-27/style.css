@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header h1 {
+    background-image: conic-gradient(#FFFF00, #FFFF00 20%, #0000FF 80%, #0000FF);
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #B0C4DE;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lightskyblue;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicators div {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button.pause {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+}
