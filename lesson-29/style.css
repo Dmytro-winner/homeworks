@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header h1 {
+    background-image: conic-gradient(#FFFF00, #FFFF00 20%, #0000FF 80%, #0000FF);
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
