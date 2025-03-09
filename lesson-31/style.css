@@ -1,0 +1,54 @@
+body {
+    background-image: url('images/gera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#weather-widget {
+    background-color: rgba(240, 248, 255, 0.7); /* Полупрозрачный цвет */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather-widget h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#weather-widget input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#weather-widget button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#weather-widget button:hover {
+    background-color: #45a049;
+}
+
+#weatherResult {
+    margin-top: 15px;
+}
+
+#weatherResult h3 {
+    font-size: 20px;
+}
+
+#weatherResult p {
+    margin: 5px 0;
+}
