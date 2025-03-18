@@ -11,7 +11,7 @@ const paths = {
     html: './dist/**/*.html',
 };
 
-// Компіляція стилів
+
 gulp.task('styles', () => {
     return gulp.src(paths.scss)
         .pipe(sassGlob())
@@ -22,7 +22,7 @@ gulp.task('styles', () => {
         .pipe(browserSync.stream());
 });
 
-// Запуск сервера
+
 gulp.task('serve', () => {
     browserSync.init({
         server: './dist',
@@ -34,5 +34,5 @@ gulp.task('serve', () => {
     gulp.watch(paths.html).on('change', browserSync.reload);
 });
 
-// Головне завдання
+
 gulp.task('default', gulp.series('styles', 'serve'));
