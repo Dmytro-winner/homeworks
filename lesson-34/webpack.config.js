@@ -12,8 +12,28 @@ module.exports = {
         filename: '[name].[contenthash].bundle.js',
     },
     plugins: [
-        new HTMLWebpackPlugin({ template: './src/index.html' }),
+        new HTMLWebpackPlugin({template: './src/index.html'}),
         new CleanWebpackPlugin()
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|svg|gif|webp)$/,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,
+                type: 'asset/resource'
+            }
+        ]
+    }
 };
 

@@ -1,28 +1,28 @@
 @use "fonts";
 
 $skyColor: lightblue;
-$textColor: black;
+$sunColor: red;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: $textColor;
+  color: $sunColor;
   background-color: $skyColor;
 }
 
 .logo {
-  background-image: url('../assets/icon-square-big.png');
+  background-image: url('../assets/free-icon.png');
+  width: 150px;
+  height: 150px;
   background-size: cover;
-  width: 200px;
-  height: 200px;
 }
 
 .some-img {
-  width: 30px;
+  width: 50px;
 }
 
 .container h1 {
-  font-family: "Acme", sans-serif;
+  font-family: "Alata", sans-serif;
 }
