@@ -1,0 +1,28 @@
+@use "fonts";
+
+$skyColor: lightgreen;
+$sunColor: red;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $sunColor;
+  background-color: $skyColor;
+}
+
+.logo {
+  background-image: url('../assets/free-icon.png');
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+.some-img {
+  width: 50px;
+}
+
+.container h1 {
+  font-family: "Alata", sans-serif;
+}
