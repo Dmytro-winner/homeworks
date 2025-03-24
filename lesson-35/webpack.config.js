@@ -2,6 +2,11 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const EslintWebpackPlugin = require('eslint-webpack-plugin');
+
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
     entry: {
@@ -17,6 +22,7 @@ module.exports = {
         port: 4200,
         hot: false
     },
+    devtool: isProd ? false : 'source-map',
     plugins: [
         new HTMLWebpackPlugin({
             filename: 'index.html',
@@ -28,36 +34,76 @@ module.exports = {
             filename: 'about.html',
             template: path.resolve(__dirname, 'src/about.html'),
             title: 'My super Project - About!',
-            chunks: ['main', 'stat']
+            chunks: ['main']
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/assets/icon.png'),
+                    from: path.resolve(__dirname, 'src/assets/faficon.png'),
                     to: path.resolve(__dirname, 'dist'),
                 }
             ]
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css'
+        }),
+        new EslintWebpackPlugin({
+            extensions: ['js'],
+            fix: true,
+            configType: 'eslintrc'
         })
-    ],
+     ],
+
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                test: /\.css/,
+                use: [
+                    {loader: MiniCssExtractPlugin.loader},
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
             {
                 test: /\.(png|jpg|jpeg|svg|gif|webp)$/,
                 type: 'asset/resource'
             },
             {
-                test: /\.html$/i,
-                loader: 'html-loader',
-            },
-            {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            },
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env',
+                            '@babel/preset-typescript'
+                        ]
+                    }
+                }
             }
+        ]
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+        minimizer: [
+            new TerserPlugin()
         ]
     }
 };
