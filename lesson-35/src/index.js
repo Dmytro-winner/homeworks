@@ -1,7 +1,7 @@
 import Post from './post';
-import './css/style.scss';
 import settings from './assets/data.json';
-import { arr } from './test';
+import { arr } from './test.ts';
+import './css/style.scss';
 
 
 const post = new Post('Webpack Post Title !!');

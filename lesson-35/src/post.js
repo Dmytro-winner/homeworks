@@ -14,5 +14,5 @@ export default class Post {
 }
 
 console.log('##########')
-console.log(process,env.NODE_ENV);
+console.log(process.env.NODE_ENV);
 console.log('##########')

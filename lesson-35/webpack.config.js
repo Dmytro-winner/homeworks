@@ -40,7 +40,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/assets/faficon.png'),
+                    from: path.resolve(__dirname, './src/faficon.png'),
                     to: path.resolve(__dirname, 'dist'),
                 }
             ]
@@ -58,7 +58,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/,
+                test: /\.s[ac]ss/,
                 use: [
                     {loader: MiniCssExtractPlugin.loader},
                     'css-loader',
