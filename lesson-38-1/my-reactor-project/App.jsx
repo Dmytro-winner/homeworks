@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import Button from './Button'; // Імпортуємо компонент Button
-import Input from './Input';   // Імпортуємо компонент Input
+import Button from 'Button';
+import Input from 'Input';
 
 const App = () => {
-    const [inputValue, setInputValue] = useState(''); // Стан для введеного тексту
+    const [inputValue, setInputValue] = useState('');
 
     const handleButtonClick = () => {
         alert('Кнопка була натиснута!');
     };
 
     const handleInputChange = (event) => {
-        setInputValue(event.target.value); // Оновлюємо введене значення
+        setInputValue(event.target.value);
     };
 
     return (
         <div>
             <h1>Мій React Проєкт</h1>
-            <Button text="Натисни мене" onClick={handleButtonClick} /> {/* Використовуємо компонент Button */}
+            <Button text="Натисни мене" onClick={handleButtonClick} />
             <Input
                 placeholder="Введіть текст..."
                 onChange={handleInputChange}
@@ -26,4 +26,5 @@ const App = () => {
     );
 };
 
-export default App;
+export default App
+
