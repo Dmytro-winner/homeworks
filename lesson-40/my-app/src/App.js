@@ -13,7 +13,7 @@ const App = () => {
                 <UncontrolledForm />
 
                 <h1>Запит до сервера</h1>
-                <DataFetchingComponent /> 
+                <DataFetchingComponent />
 
                 <p>Edit <code>src/App.js</code> and save to reload.</p>
                 <a

@@ -1,0 +1,29 @@
+.home {
+    padding: 40px 20px;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.intro img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.intro p {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}

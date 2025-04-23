@@ -1,4 +1,4 @@
-import Human from "./Human.js";
+import {Human} from "./Human.js";
 
 class Apartment {
     constructor() {

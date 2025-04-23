@@ -1,0 +1,156 @@
+$primary-color: #0f4c81;
+$secondary-color: #f1f1f1;
+$font-family: 'Arial', sans-serif;
+$mobile-breakpoint: 768px;
+
+// Основні стилі
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+body {
+    font-family: $font-family;
+    background-color: $secondary-color;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-toggle {
+            display: none;
+            span {
+                width: 30px;
+                height: 4px;
+                background-color: white;
+                margin: 5px 0;
+                transition: 0.3s;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .hero {
+        text-align: center;
+        padding: 50px;
+        background-color: $primary-color;
+        color: white;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            padding: 10px 20px;
+            background-color: white;
+            color: $primary-color;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+
+        .feature {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+// Медіа запити для адаптивності
+@media (max-width: $mobile-breakpoint) {
+    header nav {
+        flex-direction: column;
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            &.active {
+                display: flex;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

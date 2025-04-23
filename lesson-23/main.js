@@ -35,7 +35,7 @@ d) В якості демонстраціїї створити:
   додадити екземпляри класу Квартира до екземплярів класу Будинок.
 */
 
-import Human from './Human.js';
+import {Human} from './Human.js';
 import Apartment from './Apartment.js';
 import House from './House.js';
 

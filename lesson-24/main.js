@@ -1,6 +1,6 @@
 'use strict';
 
-// Дан масив об'єктів.
+
 
 const users = [
     {
@@ -77,12 +77,12 @@ const users = [
     }
 ];
 
-// #1 Повернути масив телефонних номерів користувачів, у яких баланс менше ніж 2000 доларів
+
 function getUsersWithLowBalance(users) {
     return users.filter(user => parseFloat(user.balance.replace('$', '').replace(',', '')) < 2000).map(user => user.phone);
 }
 
-// #2 Знайти суму всіх балансів користувачів
+
 function getTotalBalance(users) {
     return users.reduce((total, user) => {
         const balance = parseFloat(user.balance.replace('$', '').replace(',', ''));
@@ -90,7 +90,7 @@ function getTotalBalance(users) {
     }, 0);
 }
 
-// #3 Знайти користувача з максимальним балансом, вивести його
+
 function getUserWithMaxBalance(users) {
     return users.reduce((maxUser, user) => {
         const balance = parseFloat(user.balance.replace('$', '').replace(',', ''));
@@ -101,7 +101,7 @@ function getUserWithMaxBalance(users) {
     });
 }
 
-// #4 Вивести користувачів з повторюючимися іменами
+
 function getUsersWithDuplicateNames(users) {
     const nameCount = users.reduce((acc, user) => {
         acc[user.name] = (acc[user.name] || 0) + 1;

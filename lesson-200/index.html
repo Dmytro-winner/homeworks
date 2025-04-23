@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokalise Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Lokalise</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Case studies</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Accelerate localization from code to delivery</h1>
+    <p>A localization and translation management platform for agile teams. Embrace automation, workflow transparency, and fast project delivery.</p>
+    <button class="cta-btn">Try it free</button>
+  </section>
+
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="feature">
+      <h3>Control the localization process</h3>
+      <p>Collaborate with your team in a single workspace.</p>
+    </div>
+    <div class="feature">
+      <h3>Shorten time to market</h3>
+      <p>Localize your product in parallel with the development cycle.</p>
+    </div>
+    <div class="feature">
+      <h3>Ensure quality</h3>
+      <p>Use built-in tools to enhance the quality of translations.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Lokalise. All rights reserved.</p>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+</script>
+</body>
+</html>

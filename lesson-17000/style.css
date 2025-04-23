@@ -1,0 +1,167 @@
+C* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    padding: 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: white;
+    font-size: 16px;
+}
+
+.cta-button {
+    background-color: #ff5e00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e14e00;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid #ff5e00;
+}
+
+.cta-button.secondary:hover {
+    background-color: #ff5e00;
+    color: white;
+}
+
+/* Main Section Styling */
+.main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Features Section Styling */
+.features {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* What can you localize Section */
+.what-to-localize {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.what-to-localize h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.what-to-localize ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.what-to-localize ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff5e00;
+}
+
+                                                                                                                Main Section: The title "Accelerate localization from code to delivery", a brief description, and CTA buttons for "Try it free" and "Book a demo".
+                                                                                                                                                                                                                                                                 Features Section: Highlights features like controlling the localizati}
