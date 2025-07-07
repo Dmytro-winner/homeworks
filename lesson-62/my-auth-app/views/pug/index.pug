@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Головна – PUG
+        link(rel="icon", href="/favicon.ico")
+    body
+        h1 🧩 PUG шаблон
+        p Поточна тема: #{theme}
+        form(method="POST", action="/set-theme")
+            select(name="theme")
+                option(value="light" selected=theme==="light") Light
+                option(value="dark" selected=theme==="dark") Dark
+            button(type="submit") Зберегти тему
+        hr
+        p
+            a(href="/ejs") → Перейти на EJS
+        p
+            a(href="/ejs") → Перейти на EJS
+        p
+            | Авторизація:
+            ul
+                li Подати POST /auth/register  { username, password }
+                li Подати POST /auth/login     { username, password }
+                li Перейти GET /auth/profile

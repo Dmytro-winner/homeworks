@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Головна – EJS</title>
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+<h1>🔧 EJS шаблон</h1>
+<p>Поточна тема: <%= theme %></p>
+<form method="POST" action="/set-theme">
+    <select name="theme">
+        <option value="light" <%= theme === "light" ? "selected" : "" %>>Light</option>
+        <option value="dark" <%= theme === "dark" ? "selected" : "" %>>Dark</option>
+    </select>
+    <button type="submit">Зберегти тему</button>
+</form>
+<hr>
+<p>
+    <a href="/">← Перейти на PUG</a>
+</p>
+<p>Авторизація:</p>
+<ul>
+    <li>POST /auth/register → { username, password }</li>
+    <li>POST /auth/login → { username, password }</li>
+    <li>GET /auth/profile</li>
+</ul>
+</body>
+</html>
