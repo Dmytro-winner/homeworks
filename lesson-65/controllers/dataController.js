@@ -1,6 +1,3 @@
-
-
-
 exports.insertOne = async (req, res) => {
     try {
         const doc = await Data.create(req.body);
@@ -10,7 +7,6 @@ exports.insertOne = async (req, res) => {
     }
 };
 
-// Insert Many
 exports.insertMany = async (req, res) => {
     try {
         const docs = await Data.insertMany(req.body);
@@ -20,7 +16,6 @@ exports.insertMany = async (req, res) => {
     }
 };
 
-// Update One
 exports.updateOne = async (req, res) => {
     try {
         const { filter, update } = req.body;
@@ -31,7 +26,6 @@ exports.updateOne = async (req, res) => {
     }
 };
 
-// Update Many
 exports.updateMany = async (req, res) => {
     try {
         const { filter, update } = req.body;
@@ -42,7 +36,6 @@ exports.updateMany = async (req, res) => {
     }
 };
 
-// Replace One
 exports.replaceOne = async (req, res) => {
     try {
         const { filter, replacement } = req.body;
@@ -53,7 +46,6 @@ exports.replaceOne = async (req, res) => {
     }
 };
 
-// Delete One
 exports.deleteOne = async (req, res) => {
     try {
         const { filter } = req.body;
@@ -64,7 +56,6 @@ exports.deleteOne = async (req, res) => {
     }
 };
 
-// Delete Many
 exports.deleteMany = async (req, res) => {
     try {
         const { filter } = req.body;
@@ -75,7 +66,6 @@ exports.deleteMany = async (req, res) => {
     }
 };
 
-// Find with Projection
 exports.findWithProjection = async (req, res) => {
     try {
         const projection = req.query.projection ? JSON.parse(req.query.projection) : {};
