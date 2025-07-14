@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Користувачі</title>
+</head>
+<body>
+<h1>Список користувачів</h1>
+<ul id="user-list"></ul>
+
+<script>
+    fetch('/users')
+        .then(res => res.json())
+        .then(users => {
+            const list = document.getElementById('user-list');
+            users.forEach(user => {
+                const li = document.createElement('li');
+                li.textContent = `${user.name} (${user.email})`;
+                list.appendChild(li);
+            });
+        })
+        .catch(err => console.error('Помилка:', err));
+</script>
+</body>
+</html>
