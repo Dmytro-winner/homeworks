@@ -2,7 +2,6 @@ const express = require('express');
 const { getDb } = require('../db/mongoClient');
 const router = express.Router();
 
-/// Створити користувача (опційно)
 router.post('/', async (req, res) => {
     try {
         const db = getDb();
@@ -13,7 +12,6 @@ router.post('/', async (req, res) => {
     }
 });
 
-/// Курсор: перебір користувачів
 router.get('/cursor', async (req, res) => {
     try {
         const db = getDb();
@@ -28,7 +26,6 @@ router.get('/cursor', async (req, res) => {
     }
 });
 
-/// Аггрегація: середній вік по країнах
 router.get('/stats', async (req, res) => {
     try {
         const db = getDb();
