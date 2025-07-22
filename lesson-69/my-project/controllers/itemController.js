@@ -1,6 +1,5 @@
 const Item = require('../models/Item');
 
-// GET /api/items
 const getItems = async (req, res) => {
     try {
         const items = await Item.find().sort({ addedAt: -1 });
@@ -10,7 +9,6 @@ const getItems = async (req, res) => {
     }
 };
 
-// POST /api/items
 const addItem = async (req, res) => {
     try {
         const newItem = new Item(req.body);

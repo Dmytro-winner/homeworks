@@ -4,11 +4,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app = express();
-connectDB(); // підключення до MongoDB через Mongoose
+connectDB();
 
 app.use(express.json());
 
-// Роутинг
 const myRoutes = require('./routes/myRoutes');
 app.use('/api/items', myRoutes);
 
